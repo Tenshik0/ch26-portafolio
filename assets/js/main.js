@@ -6,8 +6,22 @@ function changeColorToRed(){
     refName.style.color = "red";
 }
 
-function changeName(){
-    const refName = document.getElementById("name");
+const addH1 = (mensaje) =>{
+    document.querySelector("#div").innerHTML = `<center><h1>${mensaje}</h1></center>`
+};
 
-    refName.console.log = refName;
+function getNamePrintToDOM(   ){
+    const name = prompt("Dime tu nombre");
+    if(name === null || name === undefined){
+        const text = `Hola anonimo, espero tengas un gran dia`;
+        addH1(text);
+    }else{
+        const text = `Hola ${name}, espero tengas un gran dia`;
+        addH1(text);
+    }
+}
+getNamePrintToDOM();
+
+function changeName(){
+    getNamePrintToDOM();
 }

@@ -90,19 +90,20 @@
         </div>
       </div>
     </nav>
+
+    <div id="div">
+
+    </div>
+
+    <center> <h2> Bienvenido a la segunda pagina </h2> </center>
    
     <!-- Acceso a DOM -->
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-5 text-center">
-          <p id="name"> Mi nombre</p>
-          <!-- <p onclick="changeColorToRed()">Cambia el color a rojo</p> -->
-        </div>
-      </div>
+
       <!-- Botones cambia el color -->
       <div class="row">
         <div class="col">
-          <button onclick="changeColorToRed()" type="button" class="btn btn-danger"> Click aqui para cambiar tu nombre </button>
+          <button onclick="changeName()" type="button" class="btn btn-danger"> Click aqui para cambiar tu nombre </button>
         </div>
         <div class="col">
 
@@ -122,13 +123,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Script cambia el nombre -->
-    <script>
-      const refName = document.getElementById("name");
-      console.log(refName);      
-      refName.innerHTML = `Hi ${refName}!`;
-
-    </script>
     <!-- Script externo -->
     <script src="../assets/js/main.js"></script>
   </body>
