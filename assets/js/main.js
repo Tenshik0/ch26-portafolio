@@ -20,7 +20,6 @@ function getNamePrintToDOM(   ){
         addH1(text);
     }
 }
-getNamePrintToDOM();
 
 function changeName(){
     getNamePrintToDOM();
