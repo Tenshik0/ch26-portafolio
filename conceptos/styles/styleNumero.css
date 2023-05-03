@@ -1,9 +1,91 @@
+body{
+    background-color: #EDF6F9; 
+}
+main{
+    margin: 0px 200px;
+    padding: 100px;
+    background-color: #83C5BE;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
 h1{
     text-align: center;
+    color: #006D77;
+    border: 10px;
+    padding: 30px;
 }
 .numeroGenerado{
     margin: 30px;
+    align-items: center;
 }
+
+
 button{
     margin: 10px;
+    position: relative;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background: #4a7470;
+    color: #EDF6F9;
+    cursor: pointer;
+    transition: .5s;
+    overflow: hidden;
+}
+
+button:hover{
+    color: #ffffff;
+}
+
+button span{
+    position: absolute;
+    background: #ffffff;
+    transition: .5s;
+}
+
+button span:nth-child(1){
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+}
+
+button span:nth-child(2){
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+}
+
+button span:nth-child(3){
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+
+button span:nth-child(4){
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+
+button:hover span:nth-child(1){
+    left: 0;
+}
+
+button:hover span:nth-child(2){
+    right: 0;
+}
+
+button:hover span:nth-child(3){
+    bottom: 0;
+}
+
+button:hover span:nth-child(4){
+    top: 0;
 }

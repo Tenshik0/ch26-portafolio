@@ -1,3 +1,30 @@
 h2{
     text-align: center;
 }
+
+#fecha{
+    text-align: center;
+    margin: 5px;
+    border: 5px;
+    padding: 10px;
+}
+
+#class{
+    text-align: center;
+}
+
+#dia{
+    margin: 10px;
+}
+
+#mes{
+    margin: 10px;
+}
+
+#anio{
+    margin: 10px;
+}
+
+#fechaDia{
+    margin: 10px;
+}
