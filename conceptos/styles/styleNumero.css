@@ -10,7 +10,6 @@ main{
     display: flex;
     justify-content: center;
 }
-
 h1{
     text-align: center;
     color: #006D77;
@@ -19,7 +18,15 @@ h1{
 }
 .numeroGenerado{
     margin: 30px;
-    align-items: center;
+    color: white;
+    font-size: 150%;
+    font-weight: 200;
+}
+
+.pregunta{
+    color: white;
+    font-size: 200%;
+    font-weight: 200;
 }
 
 

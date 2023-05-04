@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-sm" style="background-color: #006D77; ">
+    <nav class="navbar navbar-expand-sm" data-bs-theme="dark" style="background-color: #006D77;">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
           <img
@@ -90,14 +90,31 @@
 
     <main> 
       <div class="generandoNumeros">
-        <button type="button" onclick="numero()">
+        <button id="button-genera" onclick="numero()">
           <span></span>
           <span></span>
           <span></span>
           <span></span>
           Generar numero
         </button>
-        <div class="numeroGenerado" id="numeroGenerado">
+        <div class="adivinando">
+          <h1 class="pregunta" id="pregunta"> </h1>
+          <h2 class="numeroGenerado" id="numeroGenerado"> </h2>
+          <button id="button-si" style="visibility: hidden;" onclick="fin()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Si
+          </button>
+          <button id="button-no" style="visibility: hidden;" onclick="numero()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            No
+          </button>
+        </div>
         </div>
       </div>
     </main>

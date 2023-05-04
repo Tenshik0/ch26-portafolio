@@ -1,16 +1,15 @@
 function numero(){
     // Generar un número aleatorio del 1 al 100
+    let mensaje1 = "Tu numero es ";
+    let mensaje2 = ", excelente decision";
     let min = 1;
     let max = 100;
     let numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;// let n = Math.floor(Math.random() * 100);
-    let mensaje1 = "Tu numero es ";
-    let mensaje2 = ", excelente decision";
 
-    // Preguntar al usuario si el número aleatorio es su número
-    validar = confirm("Tu numero es : " + numeroAleatorio + " ?");
+    let validar = confirm   ( "Este es tu numero " + numeroAleatorio);
 
-    // Iterar mientras el número no sea adivinado
-    while(validar !== true){
+     // Iterar mientras el número no sea adivinado
+     while(validar !== true){
         pregunta = confirm("Es mayor?");
         
         // Si el usuario dice que el número es mayor
@@ -31,7 +30,7 @@ function numero(){
 
     // Si el bucle se ha salido, significa que el número ha sido adivinado
     document.getElementById("numeroGenerado").innerHTML = mensaje1 + numeroAleatorio + mensaje2;
-    
+
     /*if(validar)
         document.getElementById("numeroGenerado").innerHTML = mensaje1 + n + mensaje2;
     else
