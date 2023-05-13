@@ -1,0 +1,105 @@
+body{
+    background-color: #EDF6F9; 
+    align-items: center;
+}
+
+.img-rounded {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+#loading {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url('https://i.imgur.com/4MmX4rw.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    border: 20px;
+    margin: 20px;
+    text-align: center;
+    color: #006D77;
+}
+
+button{
+    margin: 10px;
+    position: relative;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background: #4a7470;
+    color: #EDF6F9;
+    cursor: pointer;
+    transition: .5s;
+    overflow: hidden;
+}
+
+button:hover{
+    color: #ffffff;
+}
+
+button span{
+    position: absolute;
+    background: #ffffff;
+    transition: .5s;
+}
+
+button span:nth-child(1){
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+}
+
+button span:nth-child(2){
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+}
+
+button span:nth-child(3){
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+
+button span:nth-child(4){
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+
+button:hover span:nth-child(1){
+    left: 0;
+}
+
+button:hover span:nth-child(2){
+    right: 0;
+}
+
+button:hover span:nth-child(3){
+    bottom: 0;
+}
+
+button:hover span:nth-child(4){
+    top: 0;
+}
